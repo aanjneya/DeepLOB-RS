@@ -11,7 +11,7 @@ OUTPUT_DIR = "data/raw"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-class data_fetch:
+class Data_Fetch:
     def __init__(self):
         self.buffer = []
         self.file_index = 0
