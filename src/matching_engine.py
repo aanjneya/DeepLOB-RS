@@ -17,4 +17,7 @@ class Matching_Engine:
         self.active_orders = [x for x in self.active_orders if x.status != "FULFILLED"]
         return fulfilled
 
+    def extend(self, order):
+        self.active_orders.append(order)
+
 
