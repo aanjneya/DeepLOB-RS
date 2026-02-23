@@ -75,7 +75,7 @@ class Data_Fetch:
                 await asyncio.sleep(5)
 
 if __name__ == '__main__':
-    fetch = data_fetch()
+    fetch = Data_Fetch()
     try:
         asyncio.run(fetch.run())
     except KeyboardInterrupt:
