@@ -8,10 +8,10 @@ class Portfolio:
 
     def get_trade(self, trade):
         value = trade.price * trade.quantity
-        if trade.order.side == 'buy':
+        if trade.order.side == 'BUY':
             self.cash -= value + value*trade.FEE
             self.inventory += trade.quantity
-        elif trade.order.side == 'sell':
+        elif trade.order.side == 'SELL':
             self.cash += value - value*trade.FEE
             self.inventory -= trade.quantity
 
